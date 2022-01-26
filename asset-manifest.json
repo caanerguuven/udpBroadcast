@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/udpBroadcast/static/css/main.50eae898.css",
+    "main.js": "/udpBroadcast/static/js/main.14adf803.js",
+    "static/js/787.71cbf3b3.chunk.js": "/udpBroadcast/static/js/787.71cbf3b3.chunk.js",
+    "index.html": "/udpBroadcast/index.html",
+    "main.50eae898.css.map": "/udpBroadcast/static/css/main.50eae898.css.map",
+    "main.14adf803.js.map": "/udpBroadcast/static/js/main.14adf803.js.map",
+    "787.71cbf3b3.chunk.js.map": "/udpBroadcast/static/js/787.71cbf3b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50eae898.css",
+    "static/js/main.14adf803.js"
+  ]
+}
