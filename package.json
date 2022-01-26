@@ -1,5 +1,4 @@
 {
-  "homepage": "https://caanerguuven.github.io/udpBroadcast",
   "name": "udp-broadcast",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +7,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "node-sass": "^7.0.1",
+    "parcel": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -15,12 +15,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy":"npm run serve",
-    "deploy":"gh-pages -d build",
-    "start": "node ./server/index.js & react-scripts start",
+    "start:react": "react-scripts start",
+    "start": "node ./server/index.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "serve": "yarn build & yarn start"
   },
   "eslintConfig": {
