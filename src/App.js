@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useState } from "react";
-import regeneratorRuntime from "regenerator-runtime";
 import "./App.scss";
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
   }, []);
 
   const callDrivers = useCallback(async () => {
-    const response = await fetch("/drivers", {
+    const response = await fetch("drivers", {
       method: "get",
       headers: {
         "Content-Type": "application/json",
