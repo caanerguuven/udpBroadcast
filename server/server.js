@@ -1,15 +1,11 @@
-import express from "express";
-import fs from "fs";
-import path from "path";
-import React from "react";
-import reactDomServer from "react-dom/server";
-import App from "../src/App";
-
-const appPort = process.env.PORT || 5000;
+const express = require("express");
+const path = require("path");
 const app = express();
 
+const appPort = process.env.PORT || 5000;
+
 var drivers = [];
-app.use("^/$", (req, res, next) => {
+/*app.use("^/$", (req, res, next) => {
   fs.readFile(path.resolve("./build/index.html"), "utf-8", (err, data) => {
     if (err) {
       console.log(err);
@@ -23,9 +19,10 @@ app.use("^/$", (req, res, next) => {
       )
     );
   });
-});
+});*/
 
-app.use(express.static(path.resolve(__dirname, "..", "build")));
+const buildPath = path.join(__dirname, "..", "build")
+app.use(express.static(buildPath));
 
 app.listen(appPort, () => {
   console.log(`running on port ${appPort}`);
