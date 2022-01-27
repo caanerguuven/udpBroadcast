@@ -1,6 +1,7 @@
 {
   "name": "udp-broadcast",
   "version": "0.1.0",
+  "main": "./server/index.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -15,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:react": "react-scripts start",
+    "start-client": "react-scripts start",
     "start": "node ./server/index.js",
     "build": "react-scripts build",
     "serve": "yarn build & yarn start"

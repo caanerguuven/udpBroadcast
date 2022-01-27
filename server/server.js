@@ -5,7 +5,7 @@ import React from "react";
 import reactDomServer from "react-dom/server";
 import App from "../src/App";
 
-const appPort = 3000;
+const appPort = process.env.PORT || 5000;
 const app = express();
 
 var drivers = [];

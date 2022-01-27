@@ -8,7 +8,7 @@ function App() {
     const interval = setInterval(() => {
       callDrivers()
         .then((res) => {
-          console.log("API is ok222");
+          console.log("API is ok");
         })
         .catch((err) => console.log(err));
     }, 10000);
