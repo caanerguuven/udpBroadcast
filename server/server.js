@@ -21,7 +21,7 @@ var drivers = [];
   });
 });*/
 
-const buildPath = path.join(__dirname, "..", "build")
+const buildPath = path.join(__dirname, "..", "public")
 app.use(express.static(buildPath));
 
 app.listen(appPort, () => {
